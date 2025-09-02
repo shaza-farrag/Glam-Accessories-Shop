@@ -1,0 +1,108 @@
+  <html lang="en">
+    <head>
+        <title>Shopping Cart</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/all.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+
+        <!-- <meta name="keywords" content="HTML5, CSS3, JavaScript, PHP, MySQL, Bootstrap, jQuery, Ajax, JSON, XML, Web Development, Web Design"> -->
+        <!-- <meta name="description" content="A simple HTML5 page with CSS3 and JavaScript."> -->
+
+        
+       <link rel="stylesheet" href="css/bootstrap.min.css">
+
+       <!-- <script>
+
+       </script> -->
+
+    </head>
+    <body>
+        
+       <header>
+            <nav class="container-fluid navbar">
+                <div class="logo">
+                    <a class="navbar-brand" href="index.html">
+                        <img class="navbar-brand" src="Images/Logo.jpg" alt="Glam Brand Logo">
+                    </a>
+                </div> <!--/logo-->
+                <ul class="user-div">
+                    <p id="hellomsg"></p>
+                    <div class="cartlogo">
+                        <i class="fa-solid fa-cart-shopping text-primary"></i>
+                        <span id="numofproduct" class="text-primary">0</span>
+                    </div><!--/cartlogo-->
+                    <li><a href="" class="logout-btn btn btn-outline-danger">Logout</a></li>
+                </ul><!--/user-div-->
+                <div class="products-in-cart d-none">
+                    <button class="btn w-100 showbtn"><a href="cart.html" class="">View All Products</a></button>
+                </div><!--/products-in-cart-->
+            </nav> <!--/container-fluid-->
+       </header> <!--/header-->
+
+
+       <section class="sec1-cart mt-3">
+            <div class="container">
+                <div class="parent-cart row">
+
+                    <div class="emptymsgDiv">
+                        <h5 class="emptymsg d-none">Your cart is empty<h5>
+                    </div>
+                    
+                    <div class="cart-item col-sm-12 col-lg-5 d-flex gap-4 align-items-center mt-5 p-3 mx-sm-auto mx-md-0">
+                        <div class="cart-img">
+                            <img src="Images/Butterfly Bracelet.jpg" alt="">
+                        </div><!--cart-img-->
+                        <div class="cart-details d-flex flex-column gap-2">
+                            <h4 class="card-title">${item.name}</h4>
+                            <p class="">Category: ${item.category} </p>
+                            <p class="">Price: ${item.price*item.num}$</p>
+                            <div class="item-actions">
+                                <button class="btn">-</button>
+                                <span>${item.num}</span>
+                                <button class="btn">+</button>
+                                 <a href="#" class="btn btn-danger ms-5">Remove From Cart</a>
+                            </div><!--/item-actions-->
+                        </div><!--cart-details-->
+                    </div><!--cart-item"-->
+
+                    
+
+                </div><!--parent-cart-->
+            </div><!--container-->
+
+            <h2 class="totalPrice mt-5"></h2>
+            <hr>
+       </section><!--sec1-cart-->
+
+       <section class="sec2-cart mt-5">
+            <div class="container">
+                <div class="sec2-title">
+                        <h3>Favorite Items</h3>
+                        <hr class="">
+                </div><!--sec2-title-->
+                <div class="parent-fav d-flex gap-2 mt-4 py-2">
+                    <div class="fav-item d-none">
+                        <div class="fav-img">
+                            <img src="Images/Butterfly Bracelet.jpg" alt="">
+                        </div><!--fav-img-->
+                        <div class="fav-detailes">
+                            <h4 class="card-title mt-3">Butterfly Earrings</h4>
+                            <p class="my-3">Category: Earrings </p>
+                            <i class="fa-solid fa-heart text-danger"></i>
+                        </div><!--fav-detailes-->
+                    </div><!--fav-item-->
+
+                    
+                    
+
+                </div><!--parent-fav-->
+            </div><!--container-->
+       </section><!--sec2-cart-->
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/cart.js"></script>
+    </body>
+</html>

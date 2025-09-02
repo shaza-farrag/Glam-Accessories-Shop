@@ -1,0 +1,122 @@
+  <html lang="en">
+    <head>
+        <title>Shopping Cart</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/all.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+
+        <!-- <meta name="keywords" content="HTML5, CSS3, JavaScript, PHP, MySQL, Bootstrap, jQuery, Ajax, JSON, XML, Web Development, Web Design"> -->
+        <!-- <meta name="description" content="A simple HTML5 page with CSS3 and JavaScript."> -->
+
+        
+       <link rel="stylesheet" href="css/bootstrap.min.css">
+
+       <!-- <script>
+
+       </script> -->
+
+    </head>
+    <body>
+        
+       <header>
+            <nav class="container-fluid navbar">
+                <div class="logo">
+                    <a class="navbar-brand" href="index.html">
+                        <img class="navbar-brand" src="Images/Logo.jpg" alt="Glam Brand Logo">
+                    </a>
+                </div> <!--/logo-->
+                <ul class="registration">
+                    <li><a href="login.html" class="login-btn btn btn-outline-primary">Login</a></li>
+
+                    <li><a href="register.html" class="register-btn btn btn-outline-success">Register</a></li>
+                </ul><!--/registration-->
+                <ul class="user-div d-none">
+                    <p id="hellomsg"></p>
+                    <div class="cartlogo">
+                        <i class="fa-solid fa-cart-shopping text-primary"></i>
+                        <span id="numofproduct" class="text-primary">0</span>
+                    </div><!--/cartlogo-->
+                    <li><a href="" class="logout-btn btn btn-outline-danger">Logout</a></li>
+                </ul><!--/user-div-->
+                <div class="products-in-cart d-none">
+                    <h5 class="emptymsg">Your cart is empty</h5>
+                    <div class="item-in-cart d-flex ps-2 pt-2 pe-2 pb-2 mt-2 d-none">
+                        <div class="first-col">
+                            <h6>Butterfly Earrings</h6>
+                            <div class="item-actions">
+                                <button class="btn">-</button>
+                                <span>0</span>
+                                <button class="btn">+</button>
+                            </div><!--/item-actions-->
+                        </div><!--/first-col-->
+                        <div class="second-col">
+                            <h6>Price:</h6>
+                            <h6>0$</h6>
+                        </div><!--/second-col-->
+                    </div><!--/item-in-cart-->
+
+                    <button class="btn w-100 showbtn"><a href="cart.html" class="">View All Products</a></button>
+                </div> <!--/products-in-cart-->
+            </nav> <!--/container-fluid-->
+       </header> <!--/header-->
+
+    <form class="search-form d-flex my-4">
+        <div class="container d-flex justify-content-between m-auto">
+            <div class="dropdown">
+                <button type="button" class="btn border-dark dropdown-toggle w-100 d-flex justify-content-between align-items-center"  data-bs-toggle="dropdown">
+                <span id="mainSearch" search="name">Search by Product Name</span>
+                </button>
+                <ul class="dropdown-menu w-100 search-choice">
+                    <li><a class="dropdown-item active" href="#" search = "name">Search by Product Name</a></li>
+                    <li><a class="dropdown-item" href="#" search = "category">Search by Category</a></li>
+                    <li><a class="dropdown-item" href="#" search = "color">Seach by Color</a></li>
+                </ul><!--/dropdown-menu-->
+            </div> <!--/dropdown-->
+
+            <div class="mx-4 search-bar">
+                <input class=" form-control border-dark" type="search" placeholder="Search..." id="searchBar">
+            </div><!--/search-bar-->
+
+            <input type="submit" class="btn btn-dark" value="Search"></input>
+
+        </div><!--/container-->
+    </form><!--/search-form-->
+
+
+    <section class="products">
+        <div class="container">
+
+            <div class="parent-products row m-auto d-flex justify-content-between">
+
+                    <div class="card card-1 mt-5">
+                        <div class="item-img">
+                            <img class="card-img-top" src="Images/Butterfly Earrings.jpg" alt="Card image">
+                        </div><!--/item-img-->
+                        <div class="card-body">
+                            <h4 class="card-title">Butterfly Earrings</h4>
+                            <p class="">Price: 20$</p>
+                            <p class="">Category: Earrings </p>
+                            <div class="card-actions">
+                                <i class="fa-solid fa-heart"></i>
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </div> <!--/card-actions-->
+                        </div><!--/card-body-->
+                    </div><!--/card-->
+
+
+            </div><!--/parent-products-->
+
+        </div><!--/container-->
+
+    </section><!--/products-->
+
+
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/script.js"></script>
+        <!-- <script src="js/login.js"></script> -->
+    </body>
+</html>
